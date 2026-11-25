@@ -1,6 +1,10 @@
-import { mkdirSync, writeFileSync } from 'node:fs';
+// The One-Line Cat Joke That Lands — one cat joke (max 200 chars).
+import { mkdirSync, writeFileSync } from "node:fs";
 
-const ENTRY = "My cat knocked my laptop off the table, sat in the exact spot where my code was, and stared at me like I was the one who did not understand the assignment.";
+const entry =
+  "The cat sat on my keyboard, typed 'asdkfj', and my agent shipped it to production and called it a feature.";
 
-mkdirSync('/output', { recursive: true });
-writeFileSync('/output/entry.txt', ENTRY);
+mkdirSync("/output", { recursive: true });
+writeFileSync("/output/entry.txt", entry);
+console.log(entry);
+console.log(`chars: ${entry.length}`);
